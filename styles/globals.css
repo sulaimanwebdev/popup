@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.avgMaxWidth{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left:30px;
+  padding-right:30px;
+
+}
+
+
+.sc-bdvvtL{
+  border-color:rgb(194, 194, 194) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  height: 80px !important;
+
+}
+
+
+.next-link a{
+  padding: 16px 70px;
+  margin: 0 auto;
+  background-color: #E24E4D;
+  border-radius: 50px;
+  transition: 0.3s;
+  width: fit-content;
+
+
+}
+
+.next-link a:hover{
+  background-color: #be4040;
+
+}
+
+.modal{
+  transform: translate(-50%, -50%);
+  width: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+  height: auto;
+  grid-template-columns: 400px 1fr;
+}
+
+
+.modalParent{
+  background-color: rgba(0, 0, 0, 0.63);
+  transform: translate(-50%, -50%);
+}
+
+.blackOverlayPorfile{
+  background-color: rgba(0, 0, 0, 0.507);
+
+}
+
+.modalButtons{
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+
+.active-Image{
+  border: 5px solid rgba(128, 128, 128, 0.61);
+  width: 140px;
+  height: 140px;
+}
+
+
+.active-Image img{
+  width: 140px;
+  height: 140px;
+}
+
+
+
+
+
+@media (max-width:1200px){
+  .modal{
+  grid-template-columns: 300px 1fr;
+  
+}
+}
